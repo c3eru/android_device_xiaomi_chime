@@ -74,12 +74,9 @@ TARGET_PROVIDES_AUDIO_EXTNS := true
 USE_CUSTOM_AUDIO_POLICY := 1
 
 # Display
+include hardware/qcom-caf/$(QCOM_HARDWARE_VARIANT)/display/config/display-board.mk
+
 TARGET_SCREEN_DENSITY := 440
-TARGET_USES_DISPLAY_RENDER_INTENTS := true
-TARGET_USES_DRM_PP := true
-TARGET_USES_GRALLOC1 := true
-TARGET_USES_GRALLOC4 := true
-TARGET_USES_HWC2 := true
 
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
